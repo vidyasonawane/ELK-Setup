@@ -5,3 +5,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-lo
 
 * Install and configure Curator on Ubuntu 18.04
 https://medium.com/@vidyasonawane20/install-and-configure-elasticsearch-curator-to-delete-the-old-indices-acee09344852
+
+* Download and install filebeat
+https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation.html
+`curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.0-amd64.deb
+sudo dpkg -i filebeat-7.6.0-amd64.deb`
