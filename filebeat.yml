@@ -13,10 +13,10 @@ setup.template.settings:
   index.number_of_shards: 1
 
 setup.kibana:
-  host: "34.242.78.131:5601"
+  host: "IP(kibana):5601"
 
 output.elasticsearch:
-  hosts: ["http://172.31.2.140:9200"]
+  hosts: ["http://IP(elasticsearch):9200"]
 
 processors:
   - add_host_metadata: ~
