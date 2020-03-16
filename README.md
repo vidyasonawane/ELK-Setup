@@ -41,3 +41,17 @@ sudo dpkg -i filebeat-7.6.0-amd64.deb`
 	- To trobleshoot the error, see the logs of elasticsearch which is stored in `/var/log/elasticsearch` directory.
 	- The error was __outOfMemoryError: Java Heap Space__
 	- Install **monit** to monitor the memory usage and configure the elasticsearch to restart when it reaches the memory usage of 80% 
+
+6.	Kibana is giving the error : FORBIDDEN/12/index read-only / allow delete (api)]
+	- Run the following query in kibana dev tool
+	
+	```
+	PUT filebeat-*/_settings
+	{
+	"index": {
+	"blocks": {
+	"read_only_allow_delete": "false"
+	}
+	}
+	}
+	```
